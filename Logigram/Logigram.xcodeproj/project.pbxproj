@@ -1,0 +1,927 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		710C4008293A569D0054F60C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710C4007293A569D0054F60C /* AppDelegate.swift */; };
+		710C4011293A569D0054F60C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 710C4010293A569D0054F60C /* Assets.xcassets */; };
+		710C4014293A569D0054F60C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 710C4012293A569D0054F60C /* LaunchScreen.storyboard */; };
+		710C401F293A569D0054F60C /* LogigramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710C401E293A569D0054F60C /* LogigramTests.swift */; };
+		710C4029293A569D0054F60C /* LogigramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710C4028293A569D0054F60C /* LogigramUITests.swift */; };
+		710C402B293A569D0054F60C /* LogigramUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710C402A293A569D0054F60C /* LogigramUITestsLaunchTests.swift */; };
+		716B52AE293B1F0A008F5368 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716B52AD293B1F0A008F5368 /* UITextField+Extensions.swift */; };
+		716B52B1293B1F82008F5368 /* LogigramSecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716B52B0293B1F82008F5368 /* LogigramSecureTextField.swift */; };
+		716B52B3293B232F008F5368 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716B52B2293B232F008F5368 /* UIView+Extensions.swift */; };
+		716B52B5293B2718008F5368 /* LogoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716B52B4293B2718008F5368 /* LogoutView.swift */; };
+		71C613D7293A5B7300A0F2F9 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C613D6293A5B7300A0F2F9 /* AppCoordinator.swift */; };
+		71C613D9293A5C2500A0F2F9 /* Coordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C613D8293A5C2500A0F2F9 /* Coordinators.swift */; };
+		71C613DC293A5DAD00A0F2F9 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C613DB293A5DAD00A0F2F9 /* LoginCoordinator.swift */; };
+		71C613DE293A5DE100A0F2F9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C613DD293A5DE100A0F2F9 /* LoginViewController.swift */; };
+		71C613E0293A5E0100A0F2F9 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C613DF293A5E0100A0F2F9 /* LoginViewModel.swift */; };
+		71C613E9293A6CC600A0F2F9 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71C613E8293A6CC600A0F2F9 /* Login.storyboard */; };
+		71C613EE293A709200A0F2F9 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C613ED293A709200A0F2F9 /* UIButton+Extensions.swift */; };
+		71C613F9293A740A00A0F2F9 /* WellcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C613F8293A740A00A0F2F9 /* WellcomeViewController.swift */; };
+		71E371CB293A757A0026EDF3 /* Wellcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E371CA293A757A0026EDF3 /* Wellcome.storyboard */; };
+		71E371D1293A76D90026EDF3 /* WellcomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E371D0293A76D90026EDF3 /* WellcomeCoordinator.swift */; };
+		71E371D9293A7C150026EDF3 /* ViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E371D8293A7C150026EDF3 /* ViewControllerDelegate.swift */; };
+		71E371DD293A82930026EDF3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E371DC293A82930026EDF3 /* BaseViewController.swift */; };
+		71E371E0293A94190026EDF3 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E371DF293A94190026EDF3 /* Home.storyboard */; };
+		71E371E2293AEE820026EDF3 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E371E1293AEE820026EDF3 /* HomeCoordinator.swift */; };
+		71E371E4293AEE920026EDF3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E371E3293AEE920026EDF3 /* HomeViewController.swift */; };
+		71E371E8293AFF0E0026EDF3 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E371E7293AFF0E0026EDF3 /* R.generated.swift */; };
+		74D5A44EC42DF654E74E9E52 /* Pods_LogigramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614ACA46179F717A6F457EB4 /* Pods_LogigramTests.framework */; };
+		BFB06BB4ADCBF8EC913619DF /* Pods_Logigram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158EF275ECB958FBC8577211 /* Pods_Logigram.framework */; };
+		E3FC0C1E283AFF18AF356F38 /* Pods_Logigram_LogigramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 439CAEDCF6DC184BCAEBF456 /* Pods_Logigram_LogigramUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		710C401B293A569D0054F60C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 710C3FFC293A569D0054F60C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 710C4003293A569D0054F60C;
+			remoteInfo = Logigram;
+		};
+		710C4025293A569D0054F60C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 710C3FFC293A569D0054F60C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 710C4003293A569D0054F60C;
+			remoteInfo = Logigram;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		158EF275ECB958FBC8577211 /* Pods_Logigram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Logigram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D070E9BBD8E0F2182D757F7 /* Pods-LogigramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LogigramTests.release.xcconfig"; path = "Target Support Files/Pods-LogigramTests/Pods-LogigramTests.release.xcconfig"; sourceTree = "<group>"; };
+		26FE2DCEFC239023CA0D7F80 /* Pods-LogigramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LogigramTests.debug.xcconfig"; path = "Target Support Files/Pods-LogigramTests/Pods-LogigramTests.debug.xcconfig"; sourceTree = "<group>"; };
+		339FDCE39412A28164B7FA62 /* Pods-Logigram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Logigram.release.xcconfig"; path = "Target Support Files/Pods-Logigram/Pods-Logigram.release.xcconfig"; sourceTree = "<group>"; };
+		439CAEDCF6DC184BCAEBF456 /* Pods_Logigram_LogigramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Logigram_LogigramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		614ACA46179F717A6F457EB4 /* Pods_LogigramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LogigramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70BB2ED6C8F00D4B79A58DFE /* Pods-Logigram-LogigramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Logigram-LogigramUITests.release.xcconfig"; path = "Target Support Files/Pods-Logigram-LogigramUITests/Pods-Logigram-LogigramUITests.release.xcconfig"; sourceTree = "<group>"; };
+		710C4004293A569D0054F60C /* Logigram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Logigram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		710C4007293A569D0054F60C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		710C4010293A569D0054F60C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		710C4013293A569D0054F60C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		710C4015293A569D0054F60C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		710C401A293A569D0054F60C /* LogigramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogigramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		710C401E293A569D0054F60C /* LogigramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogigramTests.swift; sourceTree = "<group>"; };
+		710C4024293A569D0054F60C /* LogigramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogigramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		710C4028293A569D0054F60C /* LogigramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogigramUITests.swift; sourceTree = "<group>"; };
+		710C402A293A569D0054F60C /* LogigramUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogigramUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		716B52AD293B1F0A008F5368 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		716B52B0293B1F82008F5368 /* LogigramSecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogigramSecureTextField.swift; sourceTree = "<group>"; };
+		716B52B2293B232F008F5368 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		716B52B4293B2718008F5368 /* LogoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutView.swift; sourceTree = "<group>"; };
+		71C613D6293A5B7300A0F2F9 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		71C613D8293A5C2500A0F2F9 /* Coordinators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinators.swift; sourceTree = "<group>"; };
+		71C613DB293A5DAD00A0F2F9 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		71C613DD293A5DE100A0F2F9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		71C613DF293A5E0100A0F2F9 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		71C613E8293A6CC600A0F2F9 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		71C613ED293A709200A0F2F9 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
+		71C613F8293A740A00A0F2F9 /* WellcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellcomeViewController.swift; sourceTree = "<group>"; };
+		71E371CA293A757A0026EDF3 /* Wellcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Wellcome.storyboard; sourceTree = "<group>"; };
+		71E371D0293A76D90026EDF3 /* WellcomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellcomeCoordinator.swift; sourceTree = "<group>"; };
+		71E371D8293A7C150026EDF3 /* ViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDelegate.swift; sourceTree = "<group>"; };
+		71E371DC293A82930026EDF3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		71E371DF293A94190026EDF3 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		71E371E1293AEE820026EDF3 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		71E371E3293AEE920026EDF3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		71E371E7293AFF0E0026EDF3 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = Logigram/Application/R.generated.swift; sourceTree = SOURCE_ROOT; };
+		AC525F2A3C5C281A416D79A5 /* Pods-Logigram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Logigram.debug.xcconfig"; path = "Target Support Files/Pods-Logigram/Pods-Logigram.debug.xcconfig"; sourceTree = "<group>"; };
+		E1643F4E322E04387B18AC00 /* Pods-Logigram-LogigramUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Logigram-LogigramUITests.debug.xcconfig"; path = "Target Support Files/Pods-Logigram-LogigramUITests/Pods-Logigram-LogigramUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		710C4001293A569D0054F60C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFB06BB4ADCBF8EC913619DF /* Pods_Logigram.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		710C4017293A569D0054F60C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74D5A44EC42DF654E74E9E52 /* Pods_LogigramTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		710C4021293A569D0054F60C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3FC0C1E283AFF18AF356F38 /* Pods_Logigram_LogigramUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		298AB2B3D82B586C879FAD20 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC525F2A3C5C281A416D79A5 /* Pods-Logigram.debug.xcconfig */,
+				339FDCE39412A28164B7FA62 /* Pods-Logigram.release.xcconfig */,
+				E1643F4E322E04387B18AC00 /* Pods-Logigram-LogigramUITests.debug.xcconfig */,
+				70BB2ED6C8F00D4B79A58DFE /* Pods-Logigram-LogigramUITests.release.xcconfig */,
+				26FE2DCEFC239023CA0D7F80 /* Pods-LogigramTests.debug.xcconfig */,
+				1D070E9BBD8E0F2182D757F7 /* Pods-LogigramTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3AF74C01FAD2AC927CDA4BB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				158EF275ECB958FBC8577211 /* Pods_Logigram.framework */,
+				439CAEDCF6DC184BCAEBF456 /* Pods_Logigram_LogigramUITests.framework */,
+				614ACA46179F717A6F457EB4 /* Pods_LogigramTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		710C3FFB293A569D0054F60C = {
+			isa = PBXGroup;
+			children = (
+				710C4006293A569D0054F60C /* Logigram */,
+				710C401D293A569D0054F60C /* LogigramTests */,
+				710C4027293A569D0054F60C /* LogigramUITests */,
+				710C4005293A569D0054F60C /* Products */,
+				298AB2B3D82B586C879FAD20 /* Pods */,
+				3AF74C01FAD2AC927CDA4BB5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		710C4005293A569D0054F60C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				710C4004293A569D0054F60C /* Logigram.app */,
+				710C401A293A569D0054F60C /* LogigramTests.xctest */,
+				710C4024293A569D0054F60C /* LogigramUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		710C4006293A569D0054F60C /* Logigram */ = {
+			isa = PBXGroup;
+			children = (
+				716B52AF293B1F51008F5368 /* Custom Views */,
+				71C613EC293A707E00A0F2F9 /* Extensions */,
+				71C613D5293A5B4700A0F2F9 /* Base */,
+				710C4037293A56FF0054F60C /* Scenes */,
+				710C4015293A569D0054F60C /* Info.plist */,
+				710C4038293A571C0054F60C /* Application */,
+				710C4010293A569D0054F60C /* Assets.xcassets */,
+			);
+			path = Logigram;
+			sourceTree = "<group>";
+		};
+		710C401D293A569D0054F60C /* LogigramTests */ = {
+			isa = PBXGroup;
+			children = (
+				710C401E293A569D0054F60C /* LogigramTests.swift */,
+			);
+			path = LogigramTests;
+			sourceTree = "<group>";
+		};
+		710C4027293A569D0054F60C /* LogigramUITests */ = {
+			isa = PBXGroup;
+			children = (
+				710C4028293A569D0054F60C /* LogigramUITests.swift */,
+				710C402A293A569D0054F60C /* LogigramUITestsLaunchTests.swift */,
+			);
+			path = LogigramUITests;
+			sourceTree = "<group>";
+		};
+		710C4037293A56FF0054F60C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				71E371DE293A94080026EDF3 /* Home Scene */,
+				71E371C9293A75660026EDF3 /* Wellcome Scene */,
+				71C613DA293A5D9A00A0F2F9 /* Login Scene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		710C4038293A571C0054F60C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				71E371E7293AFF0E0026EDF3 /* R.generated.swift */,
+				710C4012293A569D0054F60C /* LaunchScreen.storyboard */,
+				710C4007293A569D0054F60C /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		716B52AF293B1F51008F5368 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				716B52B0293B1F82008F5368 /* LogigramSecureTextField.swift */,
+				716B52B4293B2718008F5368 /* LogoutView.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		71C613D5293A5B4700A0F2F9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				71C613D6293A5B7300A0F2F9 /* AppCoordinator.swift */,
+				71C613D8293A5C2500A0F2F9 /* Coordinators.swift */,
+				71E371D8293A7C150026EDF3 /* ViewControllerDelegate.swift */,
+				71E371DC293A82930026EDF3 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		71C613DA293A5D9A00A0F2F9 /* Login Scene */ = {
+			isa = PBXGroup;
+			children = (
+				71C613DB293A5DAD00A0F2F9 /* LoginCoordinator.swift */,
+				71C613DD293A5DE100A0F2F9 /* LoginViewController.swift */,
+				71C613DF293A5E0100A0F2F9 /* LoginViewModel.swift */,
+				71C613E8293A6CC600A0F2F9 /* Login.storyboard */,
+			);
+			path = "Login Scene";
+			sourceTree = "<group>";
+		};
+		71C613EC293A707E00A0F2F9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				71C613ED293A709200A0F2F9 /* UIButton+Extensions.swift */,
+				716B52AD293B1F0A008F5368 /* UITextField+Extensions.swift */,
+				716B52B2293B232F008F5368 /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		71E371C9293A75660026EDF3 /* Wellcome Scene */ = {
+			isa = PBXGroup;
+			children = (
+				71C613F8293A740A00A0F2F9 /* WellcomeViewController.swift */,
+				71E371CA293A757A0026EDF3 /* Wellcome.storyboard */,
+				71E371D0293A76D90026EDF3 /* WellcomeCoordinator.swift */,
+			);
+			path = "Wellcome Scene";
+			sourceTree = "<group>";
+		};
+		71E371DE293A94080026EDF3 /* Home Scene */ = {
+			isa = PBXGroup;
+			children = (
+				71E371DF293A94190026EDF3 /* Home.storyboard */,
+				71E371E1293AEE820026EDF3 /* HomeCoordinator.swift */,
+				71E371E3293AEE920026EDF3 /* HomeViewController.swift */,
+			);
+			path = "Home Scene";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		710C4003293A569D0054F60C /* Logigram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 710C402E293A569D0054F60C /* Build configuration list for PBXNativeTarget "Logigram" */;
+			buildPhases = (
+				3D5C7A70C2409DB84304B9C7 /* [CP] Check Pods Manifest.lock */,
+				710C4000293A569D0054F60C /* Sources */,
+				710C4001293A569D0054F60C /* Frameworks */,
+				710C4002293A569D0054F60C /* Resources */,
+				AB9041C6AE8985BC0A902FE9 /* [CP] Embed Pods Frameworks */,
+				71C613E3293A60C500A0F2F9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Logigram;
+			productName = Logigram;
+			productReference = 710C4004293A569D0054F60C /* Logigram.app */;
+			productType = "com.apple.product-type.application";
+		};
+		710C4019293A569D0054F60C /* LogigramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 710C4031293A569D0054F60C /* Build configuration list for PBXNativeTarget "LogigramTests" */;
+			buildPhases = (
+				05FEFFC8F972C725FAFB7094 /* [CP] Check Pods Manifest.lock */,
+				710C4016293A569D0054F60C /* Sources */,
+				710C4017293A569D0054F60C /* Frameworks */,
+				710C4018293A569D0054F60C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				710C401C293A569D0054F60C /* PBXTargetDependency */,
+			);
+			name = LogigramTests;
+			productName = LogigramTests;
+			productReference = 710C401A293A569D0054F60C /* LogigramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		710C4023293A569D0054F60C /* LogigramUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 710C4034293A569D0054F60C /* Build configuration list for PBXNativeTarget "LogigramUITests" */;
+			buildPhases = (
+				455D06DE821326FE5F8B283C /* [CP] Check Pods Manifest.lock */,
+				710C4020293A569D0054F60C /* Sources */,
+				710C4021293A569D0054F60C /* Frameworks */,
+				710C4022293A569D0054F60C /* Resources */,
+				16EE96530D709F416EFD7806 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				710C4026293A569D0054F60C /* PBXTargetDependency */,
+			);
+			name = LogigramUITests;
+			productName = LogigramUITests;
+			productReference = 710C4024293A569D0054F60C /* LogigramUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		710C3FFC293A569D0054F60C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					710C4003293A569D0054F60C = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					710C4019293A569D0054F60C = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 710C4003293A569D0054F60C;
+					};
+					710C4023293A569D0054F60C = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 710C4003293A569D0054F60C;
+					};
+				};
+			};
+			buildConfigurationList = 710C3FFF293A569D0054F60C /* Build configuration list for PBXProject "Logigram" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 710C3FFB293A569D0054F60C;
+			productRefGroup = 710C4005293A569D0054F60C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				710C4003293A569D0054F60C /* Logigram */,
+				710C4019293A569D0054F60C /* LogigramTests */,
+				710C4023293A569D0054F60C /* LogigramUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		710C4002293A569D0054F60C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				710C4014293A569D0054F60C /* LaunchScreen.storyboard in Resources */,
+				71E371E0293A94190026EDF3 /* Home.storyboard in Resources */,
+				710C4011293A569D0054F60C /* Assets.xcassets in Resources */,
+				71E371CB293A757A0026EDF3 /* Wellcome.storyboard in Resources */,
+				71C613E9293A6CC600A0F2F9 /* Login.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		710C4018293A569D0054F60C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		710C4022293A569D0054F60C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05FEFFC8F972C725FAFB7094 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LogigramTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		16EE96530D709F416EFD7806 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Logigram-LogigramUITests/Pods-Logigram-LogigramUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Logigram-LogigramUITests/Pods-Logigram-LogigramUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Logigram-LogigramUITests/Pods-Logigram-LogigramUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D5C7A70C2409DB84304B9C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Logigram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		455D06DE821326FE5F8B283C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Logigram-LogigramUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71C613E3293A60C500A0F2F9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		AB9041C6AE8985BC0A902FE9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Logigram/Pods-Logigram-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Logigram/Pods-Logigram-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Logigram/Pods-Logigram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		710C4000293A569D0054F60C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71E371D1293A76D90026EDF3 /* WellcomeCoordinator.swift in Sources */,
+				71E371E8293AFF0E0026EDF3 /* R.generated.swift in Sources */,
+				71C613DE293A5DE100A0F2F9 /* LoginViewController.swift in Sources */,
+				716B52AE293B1F0A008F5368 /* UITextField+Extensions.swift in Sources */,
+				716B52B5293B2718008F5368 /* LogoutView.swift in Sources */,
+				71C613DC293A5DAD00A0F2F9 /* LoginCoordinator.swift in Sources */,
+				71C613D7293A5B7300A0F2F9 /* AppCoordinator.swift in Sources */,
+				716B52B3293B232F008F5368 /* UIView+Extensions.swift in Sources */,
+				71C613E0293A5E0100A0F2F9 /* LoginViewModel.swift in Sources */,
+				71E371E4293AEE920026EDF3 /* HomeViewController.swift in Sources */,
+				71E371DD293A82930026EDF3 /* BaseViewController.swift in Sources */,
+				71C613EE293A709200A0F2F9 /* UIButton+Extensions.swift in Sources */,
+				716B52B1293B1F82008F5368 /* LogigramSecureTextField.swift in Sources */,
+				71C613D9293A5C2500A0F2F9 /* Coordinators.swift in Sources */,
+				71E371E2293AEE820026EDF3 /* HomeCoordinator.swift in Sources */,
+				71C613F9293A740A00A0F2F9 /* WellcomeViewController.swift in Sources */,
+				710C4008293A569D0054F60C /* AppDelegate.swift in Sources */,
+				71E371D9293A7C150026EDF3 /* ViewControllerDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		710C4016293A569D0054F60C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				710C401F293A569D0054F60C /* LogigramTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		710C4020293A569D0054F60C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				710C402B293A569D0054F60C /* LogigramUITestsLaunchTests.swift in Sources */,
+				710C4029293A569D0054F60C /* LogigramUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		710C401C293A569D0054F60C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 710C4003293A569D0054F60C /* Logigram */;
+			targetProxy = 710C401B293A569D0054F60C /* PBXContainerItemProxy */;
+		};
+		710C4026293A569D0054F60C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 710C4003293A569D0054F60C /* Logigram */;
+			targetProxy = 710C4025293A569D0054F60C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		710C4012293A569D0054F60C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				710C4013293A569D0054F60C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		710C402C293A569D0054F60C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		710C402D293A569D0054F60C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		710C402F293A569D0054F60C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC525F2A3C5C281A416D79A5 /* Pods-Logigram.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZPEZ4E898R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Logigram/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Wellcome;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ntp.Logigram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		710C4030293A569D0054F60C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 339FDCE39412A28164B7FA62 /* Pods-Logigram.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZPEZ4E898R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Logigram/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Wellcome;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ntp.Logigram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		710C4032293A569D0054F60C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26FE2DCEFC239023CA0D7F80 /* Pods-LogigramTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZPEZ4E898R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ntp.LogigramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Logigram.app/Logigram";
+			};
+			name = Debug;
+		};
+		710C4033293A569D0054F60C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D070E9BBD8E0F2182D757F7 /* Pods-LogigramTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZPEZ4E898R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ntp.LogigramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Logigram.app/Logigram";
+			};
+			name = Release;
+		};
+		710C4035293A569D0054F60C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1643F4E322E04387B18AC00 /* Pods-Logigram-LogigramUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZPEZ4E898R;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ntp.LogigramUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Logigram;
+			};
+			name = Debug;
+		};
+		710C4036293A569D0054F60C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70BB2ED6C8F00D4B79A58DFE /* Pods-Logigram-LogigramUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZPEZ4E898R;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ntp.LogigramUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Logigram;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		710C3FFF293A569D0054F60C /* Build configuration list for PBXProject "Logigram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				710C402C293A569D0054F60C /* Debug */,
+				710C402D293A569D0054F60C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		710C402E293A569D0054F60C /* Build configuration list for PBXNativeTarget "Logigram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				710C402F293A569D0054F60C /* Debug */,
+				710C4030293A569D0054F60C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		710C4031293A569D0054F60C /* Build configuration list for PBXNativeTarget "LogigramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				710C4032293A569D0054F60C /* Debug */,
+				710C4033293A569D0054F60C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		710C4034293A569D0054F60C /* Build configuration list for PBXNativeTarget "LogigramUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				710C4035293A569D0054F60C /* Debug */,
+				710C4036293A569D0054F60C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 710C3FFC293A569D0054F60C /* Project object */;
+}

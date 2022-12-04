@@ -1,0 +1,6 @@
+framework module Pods_Logigram {
+  umbrella header "Pods-Logigram-umbrella.h"
+
+  export *
+  module * { export * }
+}
